@@ -1,0 +1,27 @@
+###
+GET http://127.0.0.1:5000/api/todos
+Content-Type: application/json
+###
+GET http://127.0.0.1:5000/cats
+Content-Type: application/json
+
+###
+POST http://127.0.0.1:5000/api/todos
+Content-Type: application/json
+
+  {
+    "completed": 1,
+    "task_name": "test 3"
+  }
+
+###
+DELETE http://127.0.0.1:5000/api/todos/4
+Content-Type: application/json
+
+###
+PUT http://127.0.0.1:5000/api/todos/4
+Content-Type: application/json
+
+  {
+    "completed": "0"
+  }

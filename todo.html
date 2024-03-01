@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <ul>
+      {% for todo in todos %}
+      <li>
+        {{ todo.task }} - {% if todo.done %}Done{% else %}Not Done{% endif %}
+        <a href="{{ url_for('update', id=todo.id) }}">Toggle</a>
+        <a href="{{ url_for('delete', id=todo.id) }}">Delete</a>
+      </li>
+      {% endfor %}
+    </ul>
+    <form action="{{ url_for('add') }}" method="post">
+      <label for="task">New Task:</label>
+      <input type="text" id="task" name="task" required />
+      <button type="submit">Add Task</button>
+    </form>
+  </body>
+</html>

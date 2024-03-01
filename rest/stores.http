@@ -1,0 +1,17 @@
+###
+GET http://127.0.0.1:5000/store/My%20Store
+Content-Type: application/json
+
+###
+PUT http://127.0.0.1:5000/store/My%20Store
+Content-Type: application/json
+
+{
+  "items": [
+    {
+      "name": "UPDATE Chair",
+      "price": 15.99
+    }
+  ],
+  "name": "UPDATE My Store"
+}
