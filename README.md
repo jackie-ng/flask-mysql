@@ -1,7 +1,5 @@
 ## Creating RESTful Web APIs using Flask and Python
 
-[RESTFUL API with FLASK](https://towardsdatascience.com/creating-restful-apis-using-flask-and-python-655bad51b24)
-
 Virtual Environment
 
 ```cmd
